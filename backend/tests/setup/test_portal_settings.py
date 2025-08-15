@@ -11,8 +11,8 @@ class TestPortalSettings:
     @pytest.mark.parametrize(
         "key,expected",
         [
-            ["plone.site_title", "Intranet do TRE-DF"],
-            ["plone.email_from_name", "Intranet do TRE-DF"],
+            ["plone.site_title", "Intranet"],
+            ["plone.email_from_name", "rinaldobsb@gmail.com"],
             ["plone.smtp_host", "localhost"],
             ["plone.smtp_port", 25],
         ],

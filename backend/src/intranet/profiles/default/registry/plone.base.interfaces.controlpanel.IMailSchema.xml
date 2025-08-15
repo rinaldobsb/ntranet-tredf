@@ -4,6 +4,6 @@
            prefix="plone"
            purge="false"
   >
-    <value key="email_from_name">intranet-tre-df</value>
+    <value key="email_from_name">rinaldobsb@gmail.com</value>
   </records>
 </registry>
