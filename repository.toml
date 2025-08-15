@@ -1,0 +1,37 @@
+[repository]
+name = "intranet"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "intranet"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-intranet"
+path = "frontend/packages/volto-intranet"
+changelog = "frontend/packages/volto-intranet/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-intranet/towncrier.toml"
+base_package = "@plone/volto"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "b6f93a8e7f4f25eacd21bfad04d98be7b4e7c956"
+generated_date = "2025-08-13 17:40:47"
